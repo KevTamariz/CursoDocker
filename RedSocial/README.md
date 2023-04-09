@@ -17,6 +17,14 @@
 # Datos de nuestros contenedores corriendo
     sudo docker ps
     
-# Ejemplo ya hecho
+    
+# Descargar la iamgen que se escuentra en: https://hub.docker.com/repository/docker/kevtamariz/app1/general
     sudo docker pull kevtamariz/app1:client.v1.0.0
     sudo docker pull kevtamariz/app1:api.v1.0.0
+    
+# Correr los contenedores
+    sudo docker run -d -p 3000:3000 kevtamariz/app1:client.v1.0.0
+    sudo docker run -d -p 8800:8800 kevtamariz/app1:api.v1.0.0
+    
+ Visita: localhost:3000 en el navegador
+    
